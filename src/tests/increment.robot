@@ -20,3 +20,9 @@ When reset button pressed the counter is zero
     Click Button  Paina
     Click Button  Nollaa
     Page Should Contain  nappia painettu 0 kertaa
+
+When set button pressed the counter is set
+    Go To  ${HOME_URL}
+    Input Text  value  10
+    Click Button  Aseta
+    Page Should Contain  nappia painettu 10 kertaa
